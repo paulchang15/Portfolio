@@ -116,6 +116,11 @@ section h2 {
 
 .flex-row {
     display: flex;
+    
+}
+
+.flex-between {
+    justify-content: space-evenly;
 }
 
 .item-1 {
@@ -165,7 +170,7 @@ img {
 .work-grid-container {
     display: grid;
     grid-template-columns: auto repeat(3, 1fr);
-    grid-template-rows: auto repeat(2, 5vw);
+    grid-template-rows: auto repeat(4, 1fr);
     grid-gap: 15px;
 }
 
