@@ -98,6 +98,10 @@ section h2 {
 }
 
 /* Flex Box */
+.work-container {
+    position: relative;
+}
+
 .container {
     display: flex;
     width: 100%;
@@ -115,7 +119,6 @@ section h2 {
 }
 
 .item-1 {
-    background-image: url("../images/Run_buddy.PNG");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% 70%;
@@ -146,3 +149,42 @@ img {
 .media {
     padding: 30px;
 }
+
+/*Bottom Left Text*/
+
+.bottom-right {
+    font-size: 20px;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    background-color: white;
+    color: black;
+}
+
+/* CSS Grid */
+.work-grid-container {
+    display: grid;
+    grid-template-columns: auto repeat(3, 1fr);
+    grid-template-rows: auto repeat(2, 5vw);
+    grid-gap: 15px;
+}
+
+.work-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 240px;
+    width: 400px;
+}
+
+.grid-item-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
